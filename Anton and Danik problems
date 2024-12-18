@@ -1,0 +1,29 @@
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+int main (){
+    int n;
+    cin>>n;
+
+    string s;
+    cin>>s;
+
+  int anton_wins = 0;
+  int dainik_wins = 0;
+
+  for(char ch : s){
+    if(ch == 'A') anton_wins++;
+    else if(ch=='D') dainik_wins++;
+  }
+
+  if(anton_wins<dainik_wins) cout<<"Danik";
+  else if(anton_wins>dainik_wins) cout<<"Anton";
+  else {
+    cout<<"Friendship";
+  }
+
+
+    return 0;
+}
