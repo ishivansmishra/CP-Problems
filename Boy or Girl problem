@@ -1,0 +1,29 @@
+#include<iostream>
+#include<set>
+
+using namespace std;
+
+int main (){
+    string s;
+    cin>>s;
+
+    set<int>a = {};
+    int count;
+
+    for(int i = 0;i<s.size();i++){
+        count = s[i];
+        a.insert(count);
+    }
+
+    if(a.size() % 2 == 0){
+        cout<<"Chat with her";
+
+    }
+    else {
+        cout<<"Ignore him";
+    }
+
+
+
+    return 0;
+}
